@@ -22,4 +22,7 @@ while true; do
     notify-send "$TITLE" "$MESSAGE"
     paplay /usr/share/sounds/freedesktop/stereo/complete.oga
     echo "$(date): Notification sent: $TITLE - $MESSAGE"
+
+    read -p "Press Enter to resume the timer after your break..."
+    echo "$(date): Timer resumed after break."
 done
